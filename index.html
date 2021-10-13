@@ -403,7 +403,7 @@
     >
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content rounded-0">
-          <div class="modal-header border-danger">
+          <div class="modal-header bg-light border-danger">
             <h4 class="modal-title fw-bolder" id="crimModalLabel">
               Criminal Record Check
             </h4>
@@ -415,43 +415,56 @@
             ></button>
           </div>
           <div class="modal-body">
-            You will receive a link in your email box to do the criminal
-            background check, please click on it and follow the instructions Few
-            things to remember:
-            <ol>
-              <li>No gaps in your living history</li>
-              <li>The address they ask for is your physical address</li>
+            <p class="px-3">
+              After clicking the button below, you will receive
+              <u>a link in your email</u> to start the criminal background
+              check. Please use that link and follow the instructions. A few
+              things to remember before starting:
+            </p>
+            <ol class="pe-4">
+              <li>Don't leave any gaps in your living history,</li>
+              <li>The address requested is for your physical address,</li>
               <li>
-                List all criminal offences you were convicted of ( if any and
-                exact wording )
+                List all criminal offences you were convicted of (if any) with
+                exact wording,
               </li>
-              <li>Select the sex you were born with</li>
+              <li>Select the sex you were born with,</li>
               <li>
-                Complete the Electronic ID varication, this is how the system
-                separates you from others ,,,, only you will see this info , I
-                do not see this info
+                Complete the Electronic ID verification, as this is how the
+                system separates you from others (only you will see this info),
               </li>
               <li>
-                Once you click on the Link you have to complete it or is will
-                disappear and another one will have to be sent to you
+                Once you click the emailed link, you have to complete the form
+                within one web session, or it will disappear and a new one will
+                need to be started.
               </li>
             </ol>
           </div>
-          <div class="modal-footer">
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#crimModal"
-              href="#"
-              class="
-                btn btn-outline-dark
-                fs-6
-                rounded-0
-                custom-button-red
-                mx-auto
-              "
-            >
-              Start Criminal Record Check
-            </button>
+          <div class="modal-footer pb-lg-0 d-block">
+            <div class="row my-3">
+              <div class="input-group col-12 col-lg w-100 mb-3">
+                <span class="input-group-text bg-light fs-5" id="crimEmail"
+                  >Email Address</span
+                >
+                <input type="email" class="form-control" id="crimEmail" />
+              </div>
+              <div class="col-12 col-lg-auto">
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#crimModal"
+                  href="#"
+                  class="
+                    btn btn-outline-dark
+                    fs-6
+                    rounded-0
+                    custom-button-red
+                    w-100
+                  "
+                >
+                  Start Criminal Record Check
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
