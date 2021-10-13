@@ -12,16 +12,6 @@ body {
   overflow-y: scroll; /* Show scrollbars */
 }
 
-.background-svg {
-  background-image: url("../images/winsor-bs-logo.svg") no-repeat scroll left
-    top;
-  width: 130px;
-}
-
-body.modal-open {
-  overflow: auto !important;
-}
-
 .modal {
   padding: 0 !important;
 }
@@ -33,6 +23,10 @@ body.modal-open {
 
 .nav-link {
   padding: 0;
+}
+
+.modal-backdrop {
+  opacity: 0.9 !important;
 }
 
 .custom-button-red {
