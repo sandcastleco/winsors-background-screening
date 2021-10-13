@@ -12,6 +12,12 @@ body {
   overflow-y: scroll; /* Show scrollbars */
 }
 
+.background-svg {
+  background-image: url("../images/winsor-bs-logo.svg") no-repeat scroll left
+    top;
+  width: 130px;
+}
+
 body.modal-open {
   overflow: auto !important;
 }
