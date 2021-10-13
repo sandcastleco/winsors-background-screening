@@ -1,0 +1,104 @@
+html,
+body {
+  padding: 0 !important;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.25rem;
+  max-width: 1200px;
+  margin: auto;
+  color: #212529;
+  overflow-y: scroll; /* Show scrollbars */
+}
+
+body.modal-open {
+  overflow: auto !important;
+}
+
+.modal {
+  padding: 0 !important;
+}
+
+.btn {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.custom-button-red {
+  box-shadow: 2px 2px red;
+  font-size: 1.25rem;
+  color: red;
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+}
+
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  font-family: monospace !important;
+  font-size: 1rem;
+  color: red;
+}
+
+.custom-button-black {
+  box-shadow: 2px 2px #212529;
+  font-size: 1.25rem;
+}
+
+.intro {
+  border: 1px solid red;
+}
+
+.text-red {
+  color: red;
+}
+
+.border-dark-red {
+  border-color: darkred;
+}
+
+.page-corner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 24px 24px 0;
+  border-style: solid;
+  border-color: rgb(33, 37, 41) red;
+}
+
+.profile-image {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) contrast(120%);
+}
+
+.modal-open {
+  padding-right: 0px !important;
+}
+
+span.antispam {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+span.antispam.eee:before {
+  content: "moc.lia";
+}
+span.antispam.eee:after {
+  content: "@gnineercsdnuorgkcabsrosniw";
+}
+span.antispam.ppp:before {
+  content: "3444 078 ";
+}
+span.antispam.ppp:after {
+  content: " 1+";
+}
