@@ -35,6 +35,11 @@ body {
   color: red;
 }
 
+.focus-black:focus {
+  box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 25%);
+  border-color: #212529;
+}
+
 ol {
   list-style: none;
   counter-reset: my-awesome-counter;

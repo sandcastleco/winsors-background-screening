@@ -81,26 +81,34 @@
       </div>
     </nav>
 
-    <img
-      class="position-absolute"
-      style="top: 20px; right: 20px"
-      width="150px"
-      src="images/detective.svg"
-    />
+    <div class="position-absolute" style="top: 20px; right: 20px">
+      <div class="mb-1"><i>"Discover The Best"</i></div>
+      <img width="150px" src="images/detective.svg" />
+    </div>
 
-    <div class="container-fluid position-relative px-3">
+    <div class="container-fluid px-3">
       <h1 class="border-bottom border-danger my-4 fw-light" id="services">
         Services
       </h1>
+
+      <div class="container-fluid position-relative">
+        <div class="row g-4 p-3 bg-light">
+          <div class="col-sm-9 pb-4">
+            <b><span class="text-red">Winsor's Background Screening</span></b>
+            has teamed up with
+            <span style="color: #2c5188"><b>Triton Verify</b></span
+            >, an industry leader in background checks. This collaboration
+            brings the latest in technology and fastest turnaround times in the
+            industry. Our services consist of:
+          </div>
+          <div class="col-sm-3 px-5 px-sm-0 pb-3 pb-sm-0 pe-sm-2">
+            <img class="img-fluid" style="" src="images/triton.png" />
+          </div>
+        </div>
+      </div>
       <div
         class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-3 mx-0 bg-light"
       >
-        <div class="pb-4 w-100">
-          Winsor's Background Screening has teamed up with <b>Triton Verify</b>,
-          an industry leader in background checks. This collaboration will bring
-          the latest in technology and fastest turnaround times in the industry.
-          Our services consist of:
-        </div>
         <!-- Criminal Record Checks -->
         <div class="col m-0 p-2">
           <div class="card shadow-sm rounded-0 h-100 border-danger">
@@ -142,7 +150,7 @@
                 </div>
 
                 <div class="ms-auto col-auto d-flex align-items-end">
-                  <span class="font-monospace fs-6 text-red">$99.00</span>
+                  <span class="font-monospace fs-6 text-red">$50.00</span>
                 </div>
               </div>
             </div>
@@ -182,7 +190,7 @@
 
                 <div class="ms-auto col-auto d-flex align-items-end">
                   <span class="font-monospace fs-6 text-secondary"
-                    >Price Varies</span
+                    >for pricing</span
                   >
                 </div>
               </div>
@@ -221,7 +229,7 @@
 
                 <div class="ms-auto col-auto d-flex align-items-end">
                   <span class="font-monospace fs-6 text-secondary"
-                    >Price Varies</span
+                    >for pricing</span
                   >
                 </div>
               </div>
@@ -261,7 +269,7 @@
 
                 <div class="ms-auto col-auto d-flex align-items-end">
                   <span class="font-monospace fs-6 text-secondary"
-                    >Price Varies</span
+                    >for pricing</span
                   >
                 </div>
               </div>
@@ -302,7 +310,7 @@
 
                 <div class="ms-auto col-auto d-flex align-items-end">
                   <span class="font-monospace fs-6 text-secondary"
-                    >Price Varies</span
+                    >for pricing</span
                   >
                 </div>
               </div>
@@ -342,7 +350,7 @@
 
                 <div class="ms-auto col-auto d-flex align-items-end">
                   <span class="font-monospace fs-6 text-secondary"
-                    >Price Varies</span
+                    >for pricing</span
                   >
                 </div>
               </div>
@@ -365,7 +373,7 @@
             I have spent
             <span class="font-monospace fs-6 fw-bold">20+</span> years in the
             financial industry which includes
-            <span class="font-monospace fs-6 fw-bold">16</span>
+            <span class="font-monospace fs-6 fw-bold">15</span>
             years of commercial finance, along with
             <span class="font-monospace fs-6 fw-bold">6+</span> years in the
             insurance industry. With approximately
@@ -388,7 +396,7 @@
           <span class="font-monospace fs-6">Corey Winsor</span><br />
           <span class="antispam font-monospace fs-6 eee">mg</span><br />
           <span class="antispam font-monospace fs-6 ppp">087</span><br />
-          <span class="font-monospace fs-6">Lloydminster AB/AK</span>
+          <span class="font-monospace fs-6">Lloydminster AB/SK</span>
         </p>
       </div>
     </div>
@@ -413,16 +421,16 @@
             </h4>
             <button
               type="button"
-              class="btn-close text-dark"
+              class="btn-close focus-black"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
           <div class="modal-body">
             <p class="px-3">
-              After clicking the button below, you will receive
-              <u>a link in your email</u> to start the criminal background
-              check. Please use that link and follow the instructions. A few
+              After clicking the button below, you will be
+              <u>directed to the </b><span style="color: #2c5188"><b>Triton Verify</b></span> website</u> to immediately start your criminal background
+              check. Please follow the instructions on that site. A few
               things to remember before starting:
             </p>
             <ol class="pe-4">
@@ -432,7 +440,7 @@
                 List all criminal offences you were convicted of (if any) with
                 exact wording,
               </li>
-              <li>Select the sex you were born with,</li>
+              <li>Select the sex you were assigned at birth,</li>
               <li>
                 Complete the Electronic ID verification, as this is how the
                 system separates you from others (only you will see this info),
@@ -446,13 +454,17 @@
           </div>
           <div class="modal-footer pb-lg-0 d-block">
             <div class="row my-3">
-              <div class="input-group col-12 col-lg w-100 mb-3">
+              <!-- <div class="input-group col-12 col-lg w-100 mb-3">
                 <span class="input-group-text bg-light fs-5" id="crimEmail"
                   >Email Address</span
                 >
-                <input type="email" class="form-control" id="crimEmail" />
-              </div>
-              <div class="col-12 col-lg-auto">
+                <input
+                  type="email"
+                  class="form-control focus-black"
+                  id="crimEmail"
+                />
+              </div> -->
+              <div class="col-12 col-lg-12">
                 <button
                   data-bs-toggle="modal"
                   data-bs-target="#crimModal"
